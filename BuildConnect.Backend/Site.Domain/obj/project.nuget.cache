@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YUAujjcqL8gGcAxze2YBh2mLX/gUm56Kfvff1HsfG7kApNc15kmTNKByePoBKPmc+vTX0rqx2HlEC9CX0G4tBw==",
+  "success": true,
+  "projectFilePath": "/Users/macbook/Documents/projects/bc/bc.backend/BuildConnect.Backend/Site.Domain/Site.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/macbook/.nuget/packages/microsoft.netcore.app.ref/7.0.17/microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.17/microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
