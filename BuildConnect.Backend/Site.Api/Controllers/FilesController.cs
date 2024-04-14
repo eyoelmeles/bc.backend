@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
 using Site.Application.Common.Interface;
 
@@ -15,7 +16,7 @@ public class FilesController : ControllerBase
         _fileService = fileService;
     }
 
-    [HttpGet("{folderName}/{fileName}")]
+    [HttpGet("{folderName}/{fileName}"), Authorize]
     public async Task<IActionResult> GetFile(string folderName, string fileName)
     {
         var fileContents = await _fileService.GetFileAsync(fileName, folderName);

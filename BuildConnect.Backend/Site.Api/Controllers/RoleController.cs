@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Site.Application.Features.RoleFeatures.Command;
 using Site.Application.Features.RoleFeatures.Query;
@@ -8,7 +9,7 @@ namespace Site.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class RoleController: ControllerBase
+    public class RoleController : ControllerBase
     {
         private readonly ILogger<RoleController> _logger;
         private readonly IMediator _mediator;
@@ -24,7 +25,7 @@ namespace Site.Api.Controllers
             var role = await _mediator.Send(new GetRoleQuery { Id = id });
             return Ok(role);
         }
-        [HttpGet("all")]
+        [HttpGet("all"), Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<RoleDto>>> GetAll()
         {
             var roles = await _mediator.Send(new GetAllRolesQuery());

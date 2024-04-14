@@ -28,3 +28,4 @@ C:/Users/Betty/Desktop/BuildConnect/BuildConnect.Backend/BuildConnect.Backend/Si
 /Users/macbook/Documents/projects/bc/bc.backend/BuildConnect.Backend/Site.Application/obj/Debug/net7.0/refint/Site.Application.dll
 /Users/macbook/Documents/projects/bc/bc.backend/BuildConnect.Backend/Site.Application/obj/Debug/net7.0/Site.Application.pdb
 /Users/macbook/Documents/projects/bc/bc.backend/BuildConnect.Backend/Site.Application/obj/Debug/net7.0/ref/Site.Application.dll
+/Users/macbook/Documents/projects/bc/bc.backend/BuildConnect.Backend/Site.Application/obj/Debug/net7.0/Site.Application.sourcelink.json

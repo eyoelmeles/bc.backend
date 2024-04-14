@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dJBUpRtODuLJr1zgiecC/TGV3xxv/WPsT/6XylBHzkD+7sip68QqxCbyCJJdNvShuYZ+N5kJjAVAvqQeH2OrJg==",
+  "dgSpecHash": "wNnRatpd+w2SkoqLUai5Qgu+a4apPxrKGJVv51b3JCgSorEKRcNxsrRs5ICe5e8eImItR0uizZZev1/Ba+Fx8w==",
   "success": true,
   "projectFilePath": "/Users/macbook/Documents/projects/bc/bc.backend/BuildConnect.Backend/Site.Api/Site.Api.csproj",
   "expectedPackageFiles": [
@@ -64,8 +64,11 @@
     "/Users/macbook/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/macbook/.nuget/packages/npgsql/7.0.4/npgsql.7.0.4.nupkg.sha512",
     "/Users/macbook/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.4/npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/scrutor/3.3.0/scrutor.3.3.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/sixlabors.imagesharp/3.0.2/sixlabors.imagesharp.3.0.2.nupkg.sha512",
     "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore.filters/8.0.1/swashbuckle.aspnetcore.filters.8.0.1.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore.filters.abstractions/8.0.1/swashbuckle.aspnetcore.filters.abstractions.8.0.1.nupkg.sha512",
     "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
@@ -78,9 +81,9 @@
     "/Users/macbook/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/system.threading.tasks.extensions/4.5.1/system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-    "/Users/macbook/.nuget/packages/microsoft.netcore.app.ref/7.0.17/microsoft.netcore.app.ref.7.0.17.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.17/microsoft.aspnetcore.app.ref.7.0.17.nupkg.sha512",
-    "/Users/macbook/.nuget/packages/microsoft.netcore.app.host.osx-x64/7.0.17/microsoft.netcore.app.host.osx-x64.7.0.17.nupkg.sha512"
+    "/Users/macbook/.nuget/packages/microsoft.netcore.app.host.osx-x64/7.0.17/microsoft.netcore.app.host.osx-x64.7.0.17.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/microsoft.netcore.app.ref/7.0.17/microsoft.netcore.app.ref.7.0.17.nupkg.sha512"
   ],
   "logs": [
     {
