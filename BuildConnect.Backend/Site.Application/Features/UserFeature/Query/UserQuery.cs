@@ -23,5 +23,5 @@ public class GetAllRolesQuery : IRequest<IEnumerable<string>>
 
 public class GetAllUsersByRolesQuery : IRequest<IEnumerable<UserDTO>>
 {
-    public Rolez role { get; set; }
+    public Role role { get; set; }
 }

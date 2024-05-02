@@ -7,6 +7,7 @@ public class CreateSiteUserCommand : IRequest<SiteUserDTO>
 {
     public Guid SiteId { get; set; }
     public List<Guid> UsersId { get; set; }
+    public Role Role { get; set; }
 }
 
 public class UpdateSiteUserCommand : IRequest<SiteUserDTO>

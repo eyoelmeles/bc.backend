@@ -10,7 +10,7 @@ public class MappingProfile : Profile
     {
         CreateMap<SiteModel, SiteDTO>();
         CreateMap<RFI, RFIDTO>();
-        CreateMap<Role, RoleDto>();
+        // CreateMap<Role, RoleDto>();
         CreateMap<User, UserDTO>();
         CreateMap<Material, MaterialDTO>();
         CreateMap<MaterialReport, MaterialReportDTO>();
@@ -28,6 +28,6 @@ public class MappingProfile : Profile
         CreateMap<EquipmentCost, EquipmentCostDTO>();
         CreateMap<WorkItem, WorkItemDTO>();
         CreateMap<FileDetail, FileDetailDTO>();
-        CreateMap<ActivityLog, ActivityLogDTO>();
+        // CreateMap<ActivityLog, ActivityLogDTO>();
     }
 }

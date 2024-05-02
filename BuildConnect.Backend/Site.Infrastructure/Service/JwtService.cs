@@ -35,7 +35,7 @@ public class JwtService : IJwtService
                 //}),
                 //new Claim(ClaimTypes.Name, user.UserName),
                 new Claim(ClaimTypes.Name, user.UserName),
-                new Claim(ClaimTypes.Role, Enum.GetName(typeof(Rolez), user.Role)),
+                new Claim(ClaimTypes.Role, Enum.GetName(typeof(Role), user.Role)),
                 new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.UniqueName, user.Id.ToString()),

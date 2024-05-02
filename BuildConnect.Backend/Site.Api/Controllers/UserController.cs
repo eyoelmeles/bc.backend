@@ -39,9 +39,9 @@ public class UserController : ControllerBase
         return Ok(roles);
     }
     [HttpGet("bysite")]
-    public async Task<ActionResult<IEnumerable<UserDTO>>> GetBySite(Guid siteId)
+    public async Task<ActionResult<IEnumerable<UserDTO>>> GetBySite(Guid siteId, Role role)
     {
-        var users = await _mediator.Send(new GetUsersBySiteQuery { SiteId = siteId });
+        var users = await _mediator.Send(new GetUsersBySiteQuery { SiteId = siteId, Role = role });
         return Ok(users);
     }
 
@@ -68,14 +68,15 @@ public class UserController : ControllerBase
     }
 
     [HttpDelete]
-    [Authorize(Roles = nameof(Rolez.Admin) + "," + nameof(Rolez.DataCollector))]
+    [Authorize(Roles = nameof(Role.Admin) + "," + nameof(Role.DataCollector))]
 
     public async Task<Unit> Delete([FromQuery] Guid id)
     {
-        await _mediator.Send(new DeleteUserCommand {
+        await _mediator.Send(new DeleteUserCommand
+        {
             Id = id
         });
         return Unit.Value;
     }
-    
+
 }

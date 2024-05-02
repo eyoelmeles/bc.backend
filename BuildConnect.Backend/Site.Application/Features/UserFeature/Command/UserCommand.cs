@@ -13,7 +13,7 @@ public class RegisterUserCommand : IRequest<Guid>
     public string PhoneNumber { get; set; }
     public string UserName { get; set; }
     public IFormFile ProfileImage { get; set; }
-    public Rolez Role { get; set; }
+    public Role Role { get; set; }
 }
 
 public class UpdateUserCommand : IRequest<UserDTO>
@@ -24,7 +24,7 @@ public class UpdateUserCommand : IRequest<UserDTO>
     public string? PhoneNumber { get; set; }
     public string? UserName { get; set; }
     public IFormFile? ProfileImage { get; set; }
-    public Rolez Role { get; set; }
+    public Role Role { get; set; }
 }
 public class LoginUserCommand : IRequest<LoginResponse>
 {
@@ -33,7 +33,7 @@ public class LoginUserCommand : IRequest<LoginResponse>
     public string Password { get; set; }
 }
 
-    public class DeleteUserCommand : IRequest
+public class DeleteUserCommand : IRequest
 {
     public Guid Id { get; set; }
 }

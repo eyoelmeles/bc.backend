@@ -116,7 +116,7 @@ namespace Site.Infrastructure.Service
 
             // This will create a URL pointing to a method in your API that serves the file directly. 
             // This example assumes a method named "GetFile" in a "Files" controller.
-            return $"/api/files/{folderName}/{fileName}";
+            return $"{folderName}/{fileName}";
         }
     }
 }

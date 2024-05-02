@@ -31,7 +31,7 @@ public class SiteAppDbContext : DbContext, IApplicationDbContext
     }
 
     public DbSet<SiteModel> Sites { get; set; }
-    public DbSet<Role> Roles { get; set; }
+    // public DbSet<Role> Roles { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<Material> Materials { get; set; }
     public DbSet<MaterialReport> MaterialReports { get; set; }
@@ -56,7 +56,7 @@ public class SiteAppDbContext : DbContext, IApplicationDbContext
     public DbSet<RFI> RFIs { get; set; }
     public DbSet<RFIChat> RFIChats { get; set; }
     public DbSet<ChatMessage> ChatMessages { get; set; }
-    public DbSet<ActivityLog> ActivityLogs { get; set; }
+    // public DbSet<ActivityLog> ActivityLogs { get; set; }
 
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())

@@ -33,7 +33,6 @@ public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, LoginRe
         bool valid = BCrypt.Net.BCrypt.Verify(request.Password, foundUser.PasswordHash);
         if (valid)
         {
-            // Manually constructing the UserDto object
             var userDto = new UserDTO
             {
                 Id = foundUser.Id,
@@ -44,8 +43,6 @@ public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, LoginRe
                 ProfileImage = _fileService.GetFileUrl(foundUser.ProfileImage, "UserProfileImages"),
                 Role = foundUser.Role,
             };
-
-            // Convert the file location to base64 if it's not empty
 
             return new LoginResponse
             {

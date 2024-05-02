@@ -16,7 +16,7 @@ public class FilesController : ControllerBase
         _fileService = fileService;
     }
 
-    [HttpGet("{folderName}/{fileName}"), Authorize]
+    [HttpGet("{folderName}/{fileName}")]
     public async Task<IActionResult> GetFile(string folderName, string fileName)
     {
         var fileContents = await _fileService.GetFileAsync(fileName, folderName);

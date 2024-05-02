@@ -16,7 +16,7 @@ internal class GetRolesQueryHandler : IRequestHandler<GetAllRolesQuery, IEnumera
     }
     public async Task<IEnumerable<string>> Handle(GetAllRolesQuery request, CancellationToken cancellationToken)
     {
-        var roles = Enum.GetNames(typeof(Rolez));
+        var roles = Enum.GetNames(typeof(Role));
         return roles;
     }
 }

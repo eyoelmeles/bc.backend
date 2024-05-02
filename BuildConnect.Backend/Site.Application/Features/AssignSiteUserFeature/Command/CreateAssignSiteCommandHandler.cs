@@ -34,14 +34,16 @@ public class CreateSiteUserCommandCommandHandler : IRequestHandler<CreateSiteUse
         var siteUsers = request.UsersId.Select(userId => new SiteUser
         {
             SiteId = request.SiteId,
-            UserId = userId
+            UserId = userId,
+            Role = request.Role
         });
         await _context.SiteUsers.AddRangeAsync(siteUsers, cancellationToken);
         await _context.SaveChangesAsync(cancellationToken);
 
         var site = await _context.Sites
             .Where(s => s.Id == request.SiteId)
-            .Select(s => new SiteDTO { 
+            .Select(s => new SiteDTO
+            {
                 Id = s.Id,
                 Latitude = s.Latitude,
                 Longitude = s.Longitude,
@@ -52,7 +54,8 @@ public class CreateSiteUserCommandCommandHandler : IRequestHandler<CreateSiteUse
 
         var users = await _context.Users
             .Where(u => request.UsersId.Contains(u.Id))
-            .Select(u => new UserDTO { 
+            .Select(u => new UserDTO
+            {
                 Id = u.Id,
                 UserName = u.UserName,
                 FullName = u.FullName,
@@ -66,7 +69,8 @@ public class CreateSiteUserCommandCommandHandler : IRequestHandler<CreateSiteUse
         return new SiteUserDTO
         {
             Site = site,
-            Users = users
+            Users = users,
+            Role = request.Role,
         };
     }
 }
